@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bricks Breaker - JavScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        .bricksbreaker {
+            width: 800px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 0px;
+            display: flex; 
+        }
+        
+        .start{
+            background-color: rgb(33, 183, 217, 0.5);
+            color: #FFF;
+            font-family: 'Anton', sans-serif;
+            font-size: 26px;
+            line-height: 1em;
+            outline: none;
+            border: none;
+            padding: 20px 110px 20px;
+            position: relative;
+            width: 350px;
+            margin: 0 auto;  
+            top: 420px; 
+            cursor: pointer;
+            display: flex;
+        }
+
+        .start:before,
+        .start:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        .start:before {
+            border-color: #073454;
+            border-top-width: 2px;
+            left: 0px;
+            top: -5px;
+        }
+
+        .start:after {
+            border-bottom-width: 2px;
+            border-color: #073454;
+            bottom: -5px;
+            right: 0px;
+        }
+
+        .start:hover,
+        .start.hover {
+            background-color: #073454;
+        }
+
+        .start:hover:before,
+        .start.hover:before,
+        .start:hover:after,
+        .start.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+
+        .start-img{
+            width: 350px;
+            margin: 0px auto;
+            display:flex; 
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <img class="bricksbreaker" src="./img/bricks-breaker.png" alt="">
+    <div id="startgame">
+        <a href="./startgame.html ">
+            <button class="start">START GAME</button>
+        </a>
+        <img class="start-img" src="./img/start.png" alt="">
+</body>
+</html>

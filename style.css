@@ -1,0 +1,122 @@
+body {
+    background-image: url(./img/bg3.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Anton", sans-serif;
+    margin: auto;
+}
+canvas {
+    width: 750px;
+    height: 400px;
+    background-image: url(./img/bg3.jpg);
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+
+.bricksbreaker {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+#sound {
+    cursor: pointer;
+    position: absolute;
+    top: 81%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#gameover {
+    /* position: absolute;
+    width: 100px;
+    height: 100px; */
+    display: none;
+}
+
+#won {
+    width: 260px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#fail {
+    width: 250px;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#restart {
+    cursor: pointer;
+    font-size: 260px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+}
+
+.play-again {
+    display: flex;
+    background-color: rgb(33, 183, 217, 0.5);
+    color: #fff;
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    line-height: 1em;
+    outline: none;
+    border: none;
+    padding: 12px 70px 10px;
+    position: relative;
+    width: 250px;
+    margin: auto;
+    margin-top: 130px;
+}
+
+.play-again:before,
+.play-again:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.play-again:before {
+    border-color: #0a4670;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.play-again:after {
+    border-bottom-width: 2px;
+    border-color: #0a4670;
+    bottom: -5px;
+    right: 0px;
+}
+
+.play-again:hover,
+.play-again.hover {
+    background-color: #0a4670;
+}
+
+.play-again:hover:before,
+.play-again.hover:before,
+.play-again:hover:after,
+.play-again.hover:after {
+    height: 100%;
+    width: 100%;
+}
